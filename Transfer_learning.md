@@ -1,4 +1,4 @@
-## Transfer Learning ##
+## Transfer Learning - Anusua Mukherjee, Microsoft ##
 Building re usable deep NN in Azure.
 
 Traditional ML vs DL
@@ -77,6 +77,7 @@ DLL frameworks
 GPUs in Azure
 
 * NC6, NC12, NC24(4 NVIDIA Tesla K80 GPUs)
+ 
 
 
 
