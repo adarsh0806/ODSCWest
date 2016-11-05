@@ -47,3 +47,8 @@ Concave Hull Generator
 * Start with extreme point
 * Find k-nearest neighbor
 * Select next point which generated the max angle.
+
+Conclusion
+
+* 2 phase clustering using DBSCAN helped solve this problem.
+
