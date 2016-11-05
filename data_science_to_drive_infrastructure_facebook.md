@@ -34,4 +34,16 @@ DBSCAN
 * Useful for spatial data
 * 2 main parameters - distance threshold, number of neighbors
 * Partition data - based on density(so parameters can be set based on urban/rural areas), computational benefits.
-* Results - India/Philipines have administrative boundaries can be used, density based not used here. Applied DBSCAN
+* Results - India/Philipines have administrative boundaries can be used, density based not used here. Applied DBSCAN.
+
+Settlements
+
+* Merge DBSCAN clusters to find settlments. 
+* Single linkage(gives spread out clusters) vs Complete linkage(dense clusters)
+* Ratio of distance between centroids of clusters and boundary of clusters - gave good results for settlements along the highway.
+
+Concave Hull Generator
+
+* Start with extreme point
+* Find k-nearest neighbor
+* Select next point which generated the max angle.
