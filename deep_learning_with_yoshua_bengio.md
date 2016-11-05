@@ -4,7 +4,7 @@
 * Started in 2006.
 * In 2011, rectifiers was a major breakthrough.
 
-** 5 Ingredients for ML towards AI: **
+5 Ingredients for ML towards AI:
 
 * Lots of data
 * Very flexible models
