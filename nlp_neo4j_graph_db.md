@@ -32,4 +32,32 @@ Representing text as graph
 * Most common way - word2vec
 * Represent text as a Text adjacency graph
 * [Article Link](http://www.lyonwj.com/2015/06/16/nlp-with-neo4j/)
-* [Code](https://github.com/adarsh0806/nlp-graph-notebooks)
+* [All notebook Code](https://github.com/adarsh0806/nlp-graph-notebooks)
+
+Paradigmatic Similarity
+
+* Represent each word by its context
+* Compute context similarity
+* Words with high context similarity likely have paradigmatic assocition
+* [Notebook](https://github.com/johnymontana/nlp-graph-notebooks/blob/master/paradigmatic-relations.ipynb)
+* Similarity metric - Jaccard(size of intersection between two sets/size of union between two sets), Dice similarity - similarities based on sets
+
+
+[Game of Thrones graph](https://github.com/johnymontana/graph-of-thrones)
+
+TextRank
+
+* [Code](github.com/summanlp/textrank)
+* [pip install summa](http://summanlp.github.io/textrank/)
+* Keyword extraction is done without training the model
+
+Summarization
+
+* Opinion mining
+* Summarize major opinions
+* [Code](kavita-ganesan.com/opinosis)
+* [Notebook](https://github.com/johnymontana/nlp-graph-notebooks/blob/master/opinion_mining.ipynb)
+
+
+
+
