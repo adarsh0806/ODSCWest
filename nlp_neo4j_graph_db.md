@@ -58,6 +58,14 @@ Summarization
 * [Code](kavita-ganesan.com/opinosis)
 * [Notebook](https://github.com/johnymontana/nlp-graph-notebooks/blob/master/opinion_mining.ipynb)
 
+Content Recommendation
+
+* Content based - recommending items based on what users have liked in the past
+* Collaberative filtering - similar users are interested in similar things, so recommend items based on other similar users
+* [Incomplete Notebook](https://github.com/johnymontana/nlp-graph-notebooks/blob/master/Content%20Recommendation.ipynb)
+* [Live Demo use case - Date night movies](datenightmovies.com)
+
+
 
 
 
