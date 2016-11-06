@@ -65,7 +65,9 @@ Content Recommendation
 * [Incomplete Notebook](https://github.com/johnymontana/nlp-graph-notebooks/blob/master/Content%20Recommendation.ipynb)
 * [Live Demo use case - Date night movies](datenightmovies.com)
 
+Concept Networks
 
-
+* [ConceptNet](http://conceptnet.io/)
+* Microsoft Concept Graph
 
 
