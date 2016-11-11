@@ -144,3 +144,10 @@ Distributed Optimization
 * Immediately apply updates - change in for loop to apply update before end
 * CoCoA-v1 limitations - can we avoid having to average the partial solutions - L1 regularized objectives not covered in initial framework, L1 encourages sparse solutions(works well when the feature space is large), includes Lasso, sparse logistic regression, elastic net - beneficial to distribute by framework
 * Solution - solve primal directly - default software package is glmnet
+* [CoCoA](gingsmith.github.io/cocoa)
+
+## Interpreting Black-Box Models with Applications to Healthcare 
+
+* [Repo](https://github.com/numeristical/introspective)
+* [Docs](http://ml-insights.readthedocs.io/en/latest/)
+
