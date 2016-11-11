@@ -50,4 +50,13 @@ Solution strategies for RL:
 * How to find a good policy for RL?
 * RL is modelled as a Markov Decision Process
 * RL bootstraps  - Temporal Difference Learning
-* 
+* Deep RL: RL where you use DL to estimate Q values - based on 2015 Nature paper from DeepMind called DQN
+* Uses 2 networks - target network updated slowly to slow the variance for better stability
+
+Applying RL to Dialogue systems
+
+* User simulator trained on offline data  - to mitigate the 'lots of data needed to train' issue
+* Exact state is not observed - belief state is used
+* Belief state spaces are discretized to summary state space - needs domain knowledge
+* Deep RL can generalize and hence we dont need the summary state space.
+* Summary - can be used for online learning - does not need knowledge of good policy
