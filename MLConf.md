@@ -60,3 +60,50 @@ Applying RL to Dialogue systems
 * Belief state spaces are discretized to summary state space - needs domain knowledge
 * Deep RL can generalize and hence we dont need the summary state space.
 * Summary - can be used for online learning - does not need knowledge of good policy
+
+## Netflix asset optimization, Netflix
+
+* Discrete explore-exploit
+* Continuous explore-exploit
+
+## Before the model, Elena Grewal, AirBnb
+
+* Partial mapping
+* Data process -> Sizing oppurtunity and scope - model architecture - data pipelines and processing - model optimization - product implementation & evaluation
+* This talk is about Sizing oppurtunity and scope - model architecture
+* Step 1: Need the right target metric that needs to move
+* OKR - the metric you are trying to move
+* Pricing recommendations - example of focused right target metric
+* Step 1: make the case for the metric - highlight all the ways the metric matters - price filter usage, variations by market. Project can take 6 months
+* Find the most important features for that target metric - for airbnb it was 'value' of listing
+* Step 2: Model architecture - before - use location, listing characteristics, recency - this mimicked host behaviour
+* Step 2: Model architecture - after - new metric is bookings - lets use price as a feature to predict booking - price suggestion based on prob of being booked on agiven day - added model layer for adoption of prices
+* Learnings - target metric - up front analysis of potential impact of ML product - study user behaviour
+
+## Amazon Search, Daria Sorokina
+
+* 200 trees - 150 features(only 20 used) - 100 ML models - Gradient booted trees with pairwise ranking
+* Training labels - collected from user logs - positive labels are clicked, added to cart, purchased - negative labels are idnored results(product shown, but no action), random sample from whole match set(the model needs to see what the customer has not seen)
+* What targets to use? - probably not purchases
+* Training targets - mixing click and purchase targets 
+* Fast Feature selection - 2 stage feature selection: a. choose al features that scored better than random b. use backward elimination and forward selection
+* Scroing features in ensemble of trees 
+* Continuous features provide more possible splits - tree is likely to choose the continuous feature over the binary feauture even if its useless
+* Fix for this problem - [Code](github.com/dariasor/TreeExtra)
+
+All product search:
+
+* Query category score
+* Hunger score
+* In-category relevance score for each product
+
+Match set
+
+* Behavioral matches - using online behavioral features
+* How do non text matches happen - using behavioral features
+* Cold start problem - day 0 has all behavorial features at 0 - day 7 behavioral features are picking up too slow
+
+Non Relevance Sort
+
+* Search tv - sort by average customer review - results for tv cloths show up
+* Solution - calculate {query, product type} score - filter the match set by top product types
