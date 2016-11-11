@@ -107,3 +107,29 @@ Non Relevance Sort
 
 * Search tv - sort by average customer review - results for tv cloths show up
 * Solution - calculate {query, product type} score - filter the match set by top product types
+
+## Personalized Content Blending In The Pinterest Homefeed, Pinterest
+
+* 10 billion pins a day - 150 million monthly users
+* New content  - source recommendations - ranking model
+* New content - social recommendations - ranking model
+* 2 different ranking models - why? - to parallelize model development - different content types have different important features - different content types might have different objective functions - easy to add new types of content
+
+The Blending problem
+
+* Combine results from pools into one sorted feed
+* Constraints - scores arent comparable across the pools - must maintain ranking for each pool - 
+* Desired traits of a good solution - users with significant history should see more of the content types they prefer - we should be able to train new users and tune from there
+
+Which model for the Blending problem?
+
+* Fixed ratio model - take the top ranking results from the pools 
+* Calibrate ranking models 
+* Multi armed bandit model -each arm of the bandit represents each pool 
+* Sampling technique - we dont get feedback after sample - sample content in batches - use Thompson sampling technique - map pool affinities onto an integer ratio
+* Data - positice actions, negattive actions, views of item
+* Beta distribution - good for binary outcomes - positive action, negative action
+* Response distribution - each action type has its own beta distribution and is weighted by the rewards
+* How do we deal with new users - prior distribution - for new users they see some of each of the types of content in every page
+* Sampling technique - take the expected value of the pool utilities on the integer ratio
+
