@@ -151,3 +151,35 @@ Distributed Optimization
 * [Repo](https://github.com/numeristical/introspective)
 * [Docs](http://ml-insights.readthedocs.io/en/latest/)
 
+## Personalization and Scalable Deep Learning with MXNET , ALEX SMOLA, MACHINE LEARNING DIRECTOR, AMAZON
+
+* Latent Variable Models:
+	- Temporal sequence of observations - purchases, likes, ad clicks, queries
+* Latent state to explain behavior	
+	- Clusters(navigational, informational queries in search)
+	- Topics(interest distributions for users over time)
+	- Kalman Filter(trajectory and location modeling)
+* LSTM for survival analysis
+
+## A Friendly Introduction To Causality, ALEX DIMAKIS, ASSOCIATE PROFESSOR, DEPT. OF ELECTRICAL AND COMPUTER ENGINEERING, UNIVERSITY OF TEXAS AT AUSTIN
+
+* [Tetrad Project](http://www.phil.cmu.edu/projects/tetrad/)
+
+## Using Bayesian Optimization to Tune Machine Learning Models SCOTT CLARK, CO-FOUNDER & CEO, SIGOPT
+
+Why is tuning ML Models hard?
+
+* neon.optimizers.optimizer.RMSProp()
+* scikit-learn optimizers - gridsearch, randomsearch - takes a time consuming problem and does a brute force exhaustive search
+* Bayesian optimization - efficiently find a global optima
+* Optimize objective function - loss, accuracy, likelihood
+* Given parameters - hyperparameters
+* Find the best parameters - sample function as few times as possible
+
+How does it work?
+
+* Gaussian Process - stochastic regression function
+
+Evaluating the optimizer
+
+* 
