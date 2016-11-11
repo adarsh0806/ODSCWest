@@ -133,3 +133,14 @@ Which model for the Blending problem?
 * How do we deal with new users - prior distribution - for new users they see some of each of the types of content in every page
 * Sampling technique - take the expected value of the pool utilities on the integer ratio
 
+## A General Framework for Communication-Efficient Distributed Optimization, UCBerkeley
+
+Distributed Optimization
+
+* Mini Batch - convergence gurantee - tunable communication
+* Mini batch limitations - one off methods - stale updates - average over batch size
+* CoCoA-v1 - primal dual framework - immediately apply local updates - average over K(strictly less than the batch size)
+* Primal dual framework - default in liblinear package
+* Immediately apply updates - change in for loop to apply update before end
+* CoCoA-v1 limitations - can we avoid having to average the partial solutions - L1 regularized objectives not covered in initial framework, L1 encourages sparse solutions(works well when the feature space is large), includes Lasso, sparse logistic regression, elastic net - beneficial to distribute by framework
+* Solution - solve primal directly - default software package is glmnet
