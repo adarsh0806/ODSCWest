@@ -204,3 +204,15 @@ Evaluating the optimizer
 * Searchable log of all knowledge and communication - slack
 * Hulk model - build a giant batch model and serve it statically - refresh every 24 hours
 * Parquet, airflow, caravel, quiver(key value serving model) - useful tools
+
+## Why Machine Learning Algorithms Fall Short (And What You Can Do About It) JEAN-FRANÇOIS PUGET, DISTINGUISHED ENGINEER, MACHINE LEARNING AND OPTIMIZATION, IBM
+
+* Data - Data Scientist - ML algorithm(R, GBM(XGBOOST), Spark ML) - Model - $$$$$
+* Data - data prep - ML algo - model - deploy - predict - $$$$$
+* [IBM Data Science Experience](http://datascience.ibm.com/)
+* ML models with mathematical optimization(picture)
+	- Linear Model
+	- SVMs
+	- Decision Trees
+	- Multi label classification
+	- Alternating least squares
