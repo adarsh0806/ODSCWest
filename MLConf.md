@@ -217,3 +217,8 @@ Evaluating the optimizer
 	- Multi label classification
 	- Alternating least squares
 * ML models that use mathematical optimization need to mathematical techniques.
+
+## Sentiment Analysis, Walmart
+
+* VADER - Valence Aware Dictionary and Sentiment Reasoner - [Repo](https://github.com/cjhutto/vaderSentiment)
+* VADER is sensitive to adverbs, punctuation, emoticons, nuances
