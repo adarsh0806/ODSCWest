@@ -216,3 +216,4 @@ Evaluating the optimizer
 	- Decision Trees
 	- Multi label classification
 	- Alternating least squares
+* ML models that use mathematical optimization need to mathematical techniques.
