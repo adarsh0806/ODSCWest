@@ -182,4 +182,25 @@ How does it work?
 
 Evaluating the optimizer
 
-* 
+* Area under curve
+* Benchmark suite - optimization functions (Branin, Ackeley, Rosenbrock), ML Datasets (LIBSVM)
+* Infrastructure - AWS cluters
+* Viz tool - Best Seen Traces
+* Metrics - stochasticity - Mann-Whitney test for significance
+* First Mann-Whitney U tests using BEST_FOUND - AUC
+
+[Slides](http://www.slideshare.net/SigOpt/mlconf-2016-sigopt-talk-by-scott-clark)
+
+##  Several People Are Tuning: Data and Machine Learning at Slack JOSH WILLS, HEAD OF DATA ENGINEERING, SLACK
+
+* Prod - MySQL, Solr, Redis
+* Data warehouse - S3, Hive, Spark, Presto, MySQL
+* WebApp - Apache, PHP
+* Logs via kafka sent from the webapp to the data warehouses
+* Prod communicates with the warehouse through Sqooper
+* MLE - MLE who enjoy working on ML problems, people who haven't done ML and who don't know how terrible the job is
+* Airflow
+* OODA - observe, orient(come up with metrics), decide, act(build models, optimize, hyperparameter tune)
+* Searchable log of all knowledge and communication - slack
+* Hulk model - build a giant batch model and serve it statically - refresh every 24 hours
+* Parquet, airflow, caravel, quiver(key value serving model) - useful tools
